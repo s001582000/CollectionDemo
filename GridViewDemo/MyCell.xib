@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MyCell" customModule="GridViewDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bGJ-1i-4IH">
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tii-cO-nXA">
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="AFf-DL-vry"/>
+                            <constraint firstAttribute="width" secondItem="tii-cO-nXA" secondAttribute="height" multiplier="1:1" id="WFL-VQ-ga1"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="bGJ-1i-4IH" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" id="U3X-kh-G7Q"/>
+                <constraint firstAttribute="trailing" secondItem="tii-cO-nXA" secondAttribute="trailing" id="Z9O-EC-RJp"/>
+                <constraint firstItem="tii-cO-nXA" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="eqr-bj-Tgv"/>
+                <constraint firstItem="bGJ-1i-4IH" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="k9o-KT-AiH"/>
+                <constraint firstItem="bGJ-1i-4IH" firstAttribute="centerY" secondItem="gTV-IL-0wX" secondAttribute="centerY" id="ppx-mf-vfk"/>
+                <constraint firstItem="bGJ-1i-4IH" firstAttribute="height" secondItem="gTV-IL-0wX" secondAttribute="height" id="xrx-jD-1hI"/>
+            </constraints>
+            <connections>
+                <outlet property="lblName" destination="bGJ-1i-4IH" id="sgj-mF-vH6"/>
+                <outlet property="viewSelect" destination="tii-cO-nXA" id="MTp-Bn-FFX"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+</document>
